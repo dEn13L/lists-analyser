@@ -1,0 +1,225 @@
+body {      
+    background-color: #BBBBBB;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+#analyser .output-countries-list{
+    margin: 5px 5px 5px 15px;
+}
+
+#analyser table.table-condensed th, td{
+    /*text-align: center;*/
+}
+
+#analyser input.form-control {  
+    font-weight: bold;
+    text-align: center;
+}
+
+#analyser button {
+    /*margin-right: 15px;*/
+}
+
+#analyser .arrows {
+    /*margin-top: 50px;*/
+    margin-left: auto;
+    margin-right: auto
+}
+
+#analyser .arrow {
+    width: 30px;
+    height: 30px;
+}
+
+#analyser .arrow-up-active {
+    cursor: pointer;
+    background: url(../imgs/arrow30.png) 0 0;
+    -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
+}
+
+#analyser .arrow-up-passive {   
+    background: url(../imgs/arrow30.png) 0 -30px;
+    -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);    
+}
+
+#analyser .arrow-down-active {  
+    cursor: pointer;
+    background: url(../imgs/arrow30.png) 0 0;
+}
+
+#analyser .arrow-down-passive {
+    background: url(../imgs/arrow30.png) 0 -30px;
+}
+
+.tabs-right > .nav-tabs > .nav-categoty {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* http://bootply.com/74926 */
+/* custom inclusion of right tabs */
+
+.tabs-right > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.tabs-right > .nav-tabs {
+    float: right;
+    margin-left: 19px;
+    border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-right > .nav-tabs > li > a {
+    margin-left: -1px;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+    border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+    border-color: #ddd #ddd #ddd transparent;
+    *border-left-color: #ffffff;
+}
+
+/* flex textarea */
+
+.flex-text-wrap {   
+    position: relative;
+    *zoom: 1;
+}
+
+textarea, .flex-text-wrap {
+    outline: 0;
+    margin: 0;    
+    margin-bottom: 25px;
+    border: none;
+    padding: 0;
+    *padding-bottom: 0!important;
+}
+
+.flex-text-wrap textarea, .flex-text-wrap pre {
+    *white-space: pre;
+    *word-wrap: break-word;
+    white-space: pre-wrap;
+    width: 100%;    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex-text-wrap textarea {      
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    /* IE7 box-sizing fudge factor */
+    *height: 94%;
+    *width: 94%;
+}
+
+.flex-text-wrap pre {
+    display: block;
+    visibility: hidden;
+}
+
+textarea, .flex-text-wrap pre {    
+    line-height: 1.7;    
+    font-size: 100%;
+    padding: 22px 25px 0;
+    min-height: 60px;
+    border: 1px solid #c6c8ce;
+    width: 100%;
+    -webkit-appearance: none;
+    background: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 8px rgba(182, 195, 214, .6) inset, 0 1px 1px #fff;
+    -moz-box-shadow: 0 0 8px rgba(182, 195, 214, .6) inset, 0 1px 1px #fff;
+    box-shadow: 0 0 8px rgba(182, 195, 214, .6) inset, 0 1px 1px #fff;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-easing: ease-in-out;
+    -moz-transition-easing: ease-in-out;
+    -o-transition-easing: ease-in-out;
+    -ms-transition-easing: ease-in-out;
+    transition-easing: ease-in-out;
+    -webkit-transition-property: border-color, -webkit-box-shadow;
+    -webkit-transition-property: border-color, box-shadow;
+    -moz-transition-property: border-color, -moz-box-shadow;
+    -moz-transition-property: border-color, box-shadow;
+    -o-transition-property: border-color, box-shadow;
+    -ms-transition-property: border-color, box-shadow;
+    transition-property: border-color, box-shadow;
+}
+
+textarea:focus {
+    border-color: #66afe9;
+    -webkit-box-shadow: 0 0 10px @brand-colour inset, 0 1px 1px #fff;
+    -moz-box-shadow: 0 0 10px @brand-colour inset, 0 1px 1px #fff;
+    box-shadow: 0 0 10px @brand-colour inset, 0 1px 1px #fff;
+}

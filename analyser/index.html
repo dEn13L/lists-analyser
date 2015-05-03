@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LISTS ANALYSER</title>
+
+	<link rel="icon" type="image/icon" href="imgs/favicon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"></link>	
+	<link rel="stylesheet" type="text/css" href="css/theme.jui.css"></link>	
+	<link rel="stylesheet" type="text/css" href="css/style.css"></link>	
+
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="js/jquery.flexText.js"></script>
+	<script type="text/javascript" src="js/classes.js"></script>
+	<script type="text/javascript" src="js/report.js"></script>
+	<script type="text/javascript" src="js/lists-analyser.js"></script>
+</head>
+<body>
+	<div id="analyser" class="container">
+		<div class="navbar">
+	        <h3 class="text-muted">LISTS ANALYSER</h3>	        
+	    </div>
+		<div class="row">
+			<div class="col-md-10">
+				<div class="tab-content">
+
+					<!-- Uniqs TAB -->					
+
+					<div id="tab_uniqs" class="tab-pane active">
+						<div class="row">
+				   			<div class="col-md-12">
+					   			<div id="duplicatesOutput">
+					    		</div>
+				    		</div>
+				    	</div>
+				    	<br/>
+						<div class="row">
+				   			<div class="col-md-2">
+								<button id="get_uniqs" class="btn btn-success">Get uniqs</button>
+				    		</div>
+				    	</div>				    	
+				    	<br/>				    	
+						<div class="row">
+							<div class="col-md-6 text-center">
+								<span></span>
+								<textarea id="input" placeholder="Input here..."></textarea>								
+				    		</div>
+				    		<div class="col-md-6 text-center">
+				    			<span></span>
+								<textarea id="output" placeholder="Output here..."></textarea>								
+				    		</div>
+					   	</div>
+					</div>
+
+					<!-- Compare TAB -->					
+
+					<div id="tab_compare" class="tab-pane">
+						<div class="row">
+				   			<div class="col-md-12">
+					   			<div class="output">
+					    		</div>
+				    		</div>
+				    	</div>
+				    	<br/>
+						<div class="row">
+				   			<div class="col-md-2">
+								<button id="compare" class="btn btn-success">Compare</button>
+				    		</div>
+				    	</div>
+				    	<br/>
+						<div class="row">
+							<div class="col-md-6 text-center">
+								<div id="uniq1"></div>								
+								<textarea id="list1" placeholder="Input here..."></textarea>
+								<div id="same1"></div>
+				    		</div>
+				    		<div class="col-md-6 text-center">
+				    			<div id="uniq2"></div>
+								<textarea id="list2" placeholder="Input here..."></textarea>
+								<div id="same2"></div>
+				    		</div>
+					   	</div>
+					</div>
+		        </div>
+			</div>
+			<div class="col-md-2">
+				<div class="fixed">	
+					<div class="tabs-right">
+						<ul class="nav nav-tabs">							
+				            <li class="active"><a data-toggle="tab" href="#tab_uniqs">Uniqs</a></li>
+				            <li><a data-toggle="tab" href="#tab_compare">Compare</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>			
+	    </div>
+    </div>
+</body>
+</html>
